@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up page</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="register-photo">
+        <div class="form-container">
+            <div class="image-holder"></div>
+            <form method="POST" action="//localhost:3001/register">
+                {% if notmatch %}
+            <h3 style="color:red">{{ message }}</h3>
+            {% endif %}
+                <h2 class="text-center"><strong>SIGN UP</strong></h2>
+                <div class="form-group"><input required class="form-control" type="name" name="Name" placeholder="Name"></div>
+                <div class="form-group"><input class="form-control" required type="email" name="Email" placeholder="email"></div>
+                <div class="form-group"><input class="form-control" required type="password" name="Password" placeholder="Password"></div>
+            <div class="form-group"><input class="form-control" required type="password" name="Cpassword" placeholder="Confirm Password"></div>
+                
+                
+                <div class="form-group">
+                    <div class="d-flex justify-content-between">
+            <div class="form-check"> <input name='check' class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> <label class="form-check-label" for="flexCheckDefault"> Remember me </label> </div>
+              
+        </div>
+                </div>
+                <div class="form-group"><button class="btn btn-success btn-block btn-info" type="submit"> Sign Up</button></div><a class="already" href="#">Terms of Use and Privacy Policy</a>
+            </form>
+        </div>
+    </div>
+    <script>
+     
+    </script>
+
+</body>
+</html>

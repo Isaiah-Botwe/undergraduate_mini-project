@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+    </head>
+    <body>
+        Welcom {{ Name }}
+        <h2>User Details and the donations page</h2>
+        {% for i in range(0, donations.length ) %}
+        <a href="//localhost:3001/describe{{ donations[i].ID }}"> {{ donations[i].Title }} </a> <br>
+        {% endfor %}
+    </body>
+</html>
